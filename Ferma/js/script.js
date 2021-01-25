@@ -13,8 +13,8 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-  $('.search__mobile__phone').click(function (event) {
-    $('.header__search__block ').toggleClass('activeForme');
+  $('.search__mobile__version').click(function (event) {
+    $('.header__left__block__search').toggleClass('activeForme');
   });
 });
 

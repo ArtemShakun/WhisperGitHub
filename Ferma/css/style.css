@@ -59,6 +59,10 @@
    padding: 0px 20px;  
    
 }
+.text_60{
+   font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+}
 .text_36{
    font-family: 'Roboto', sans-serif;
     font-size: 36px;
@@ -89,7 +93,8 @@
 /* ****HEADER**** */
 
 header{
-   position: relative;
+   position: absolute;
+   width:100%;
    background-color: #05042F;
    
 }
@@ -98,9 +103,6 @@ header{
    justify-content: space-between;
    padding: 20px 0px;
 }
-.header__bg {
-}
-
 .header__left__block {
    display: flex;
    justify-content: space-between;
@@ -262,5 +264,24 @@ header{
    color: #fff;
    font-weight: bold;
 }
-.pl {
+/* ****HEADER-BANER**** */
+.header__baner{
+   background-image: url(../img/Banner_3.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+}
+.header__banner__title{
+   color: #fff;
+   font-weight: bold;
+   width: 750px;
+   text-align: center;
+   margin: 0 auto;
+   text-transform: uppercase;
+   line-height: 80px;
 }
