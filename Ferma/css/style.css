@@ -285,3 +285,32 @@ header{
    text-transform: uppercase;
    line-height: 80px;
 }
+/* ****PRODUCT CATEGORY**** */
+
+.product__category{
+   background-color: #F6B841;
+   text-align: center;
+}
+.category__title{
+   padding: 50px 0px 40px 0px;
+}
+
+.category{
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 45px;
+}
+
+.category__block{
+   width:90px;
+   margin: 0px 10px 10px 10px;
+}
+.category__block img{
+   width:100%;
+   
+}
+.category__text{
+   padding-top: 15px;
+   color:black;
+   font-weight: 700;
+}
