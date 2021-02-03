@@ -26,3 +26,27 @@
 // TASK-5 -- Напишите функцию shuffle(array), которая перемешивает (переупорядочивает случайным образом) элементы массива.
 
 // const shuffle = arr => arr.sort(() => Math.round(Math.random() * 100) - 50)
+
+// TASK-6 -- Напишите функцию, которая принимает объект и возвращает массив со значениями объекта.
+
+// let objTransformArr = user => {
+//    let arrUser = []
+//    for (key in user) {
+//       arrUser.push(user[key])
+//    }
+//    return arrUser
+// }
+
+
+// let objTransformArr = user => Object.values(user)
+
+// TASK-7 -- Напишите функцию, которая копирует объект.
+
+let copyObj = obj => {
+   let newObj = {}
+   for (key in obj) {
+      newObj[key] = obj[key]
+   }
+   return newObj
+}
+
