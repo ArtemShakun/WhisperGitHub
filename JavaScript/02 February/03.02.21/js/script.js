@@ -22,3 +22,7 @@
 // const getMessagesForBestStudents = (allStudentsList, studentsPassed) =>
 //    allStudentsList.filter(name => studentsPassed.includes(name))
 //       .map((name => ('Good job, ' + name)));
+
+// TASK-5 -- Напишите функцию shuffle(array), которая перемешивает (переупорядочивает случайным образом) элементы массива.
+
+// const shuffle = arr => arr.sort(() => Math.round(Math.random() * 100) - 50)
