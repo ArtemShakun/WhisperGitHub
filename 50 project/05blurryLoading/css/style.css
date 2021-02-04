@@ -1,0 +1,31 @@
+body{
+   display: flex;
+   height: 100vh;  
+   align-items: center;
+   justify-content: center;
+   font-family: 'Roboto', sans-serif ;
+   overflow: hidden;
+   margin: 0;
+}
+
+ .bg{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: url('../img/1.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   z-index: -1;
+   filter: blur(0px);
+   
+ }
+
+.loading-text{
+   font-size: 50px;
+   color: white;
+}
