@@ -42,11 +42,11 @@
 
 // TASK-7 -- Напишите функцию, которая копирует объект.
 
-let copyObj = obj => {
-   let newObj = {}
-   for (key in obj) {
-      newObj[key] = obj[key]
-   }
-   return newObj
-}
+// let copyObj = obj => {
+//    let newObj = {}
+//    for (key in obj) {
+//       newObj[key] = obj[key]
+//    }
+//    return newObj
+// }
 
