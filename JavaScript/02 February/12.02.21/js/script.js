@@ -1,34 +1,41 @@
 'use strict';
 
 const tasks = [
-   'buy milk',
-   'Pick up Tom from airoport',
-   'Visit party',
-   'Visit doctor',
-   'Buy meat',
+   { text: 'buy milk', done: false },
+   { text: 'Pick up Tom from airoport', done: true },
+   { text: 'Visit party', done: false },
+   { text: 'Visit doctor', done: true },
+   { text: 'Buy meat', done: false },
 ];
 
 
 const renderListItems = listItems => {
    const listElem = document.querySelector('.todo__list__taks');
 
-   const listItemElements = listItems.map(itemText => {
+   const listItemElements = listItems
+      .sort((a, b) => a.done - b.done)
+      .map(({ text, done }) => {
 
-      const listItemElem = document.createElement('li');
-      listItemElem.classList.add('todo__list__taks__one-task');
+         const listItemElem = document.createElement('li');
+         listItemElem.classList.add('todo__list__taks__one-task');
+         if (done) {
+            listItemElem.classList.add('completed')
+         }
 
-      const span = document.createElement('span');
-      span.append(itemText)
+         const span = document.createElement('span');
 
-      const checkbox = document.createElement('input');
-      checkbox.setAttribute('type', 'checkbox');
+         span.append(text)
+
+         const checkbox = document.createElement('input');
+         checkbox.setAttribute('type', 'checkbox');
+         checkbox.checked = done;
 
 
 
-      listItemElem.append(checkbox, span);
+         listItemElem.append(checkbox, span);
 
-      return listItemElem
-   });
+         return listItemElem
+      });
 
    listElem.append(...listItemElements)
 
