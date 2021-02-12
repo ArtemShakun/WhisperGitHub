@@ -102,32 +102,69 @@
 
 // КЛАССЫ
 
-class User {
-   // Конструктор как __init__ в python.
-   constructor(name, age) {
-      this.name = name;
-      this.age = age;
-   }
-   // В классах не нужно явно записывать методы в прототипы
-   //   User.prototype.requestNewPhoto = function () ....
-   sayHi() {
-      console.log(`Hi, I am ${this.name}`);
-   }
+// class User {
+//    // Конструктор как __init__ в python.
+//    constructor(name, age) {
+//       this.name = name;
+//       this.age = age;
+//    }
+//    // обычные методы есть только в экземпляре класса, 
+//    // а статический есть в классе, но в экземпляре его не будет.
+//    static compare(user1, user2) {
+//       return user1.age - user2.age;
+//    }
+//    // В классах не нужно явно записывать методы в прототипы
+//    //   User.prototype.requestNewPhoto = function () ....
+//    sayHi() {
+//       console.log(`Hi, I am ${this.name}`);
+//    }
 
-   requestNewPhoto() {
-      console.log(`New photo request was sent for ${this.name}`);
-   }
-   setAge(value) {
-      if (value < 0) {
-         return false;
-      }
-      this.age = value;
-      if (value >= 25) {
-         this.requestNewPhoto()
-      }
-      return value;
-   }
-}
+//    requestNewPhoto() {
+//       console.log(`New photo request was sent for ${this.name}`);
+//    }
+//    setAge(value) {
+//       if (value < 0) {
+//          return false;
+//       }
+//       this.age = value;
+//       if (value >= 25) {
+//          this.requestNewPhoto()
+//       }
+//       return value;
+//    }
+// }
 
-const user1 = new User('Tom', 21);
-console.log(user1)
+// const user1 = new User('Tom', 21);
+// const user2 = new User('Barbara', 45);
+// console.log(User.compare(user1, user2))
+
+
+// Защищенность и приватность
+
+// class Wallet {
+//    #balance = 0;
+
+//    getBalance() {
+//       return this.#balance;
+//    }
+//    deposit(amount) {
+//       return this.#balance += amount;
+//    }
+//    withdraw(amount) {
+//       if (amount > this.#balance) {
+//          console.log('No enouhg founds');
+//          return;
+//       }
+//       this.#balance -= amount;
+//    }
+// }
+
+// const wallet1 = new Wallet();
+
+console.log(wallet1.getBalance())
+wallet1.deposit(130);
+console.log(wallet1.getBalance())
+wallet1.withdraw(86);
+console.log(wallet1.getBalance())
+wallet1.withdraw(245);
+console.log(wallet1.#balance)

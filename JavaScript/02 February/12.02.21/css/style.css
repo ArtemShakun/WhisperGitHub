@@ -1,0 +1,134 @@
+ 
+ *, *:before,*:after {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+ 
+ :focus, :active {outline: none;}
+ 
+ a:focus, a:active {outline: none;}
+ 
+ nav, footer, header, aside {display: block;}
+ 
+ html, body {
+   height: 100%;
+   width: 100%;
+   font-family: 'Roboto', sans-serif;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+ }
+ 
+ input, button, textarea {font-family: inherit;}
+ 
+ input::-ms-clear {display: none;}
+ 
+ button {cursor: pointer;}
+ 
+ button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+ }
+ 
+ a, a:visited {text-decoration: none;}
+ 
+ a:hover {text-decoration: none;}
+ 
+ ul li {list-style: none;}
+ 
+ img {vertical-align: top;}
+ 
+ h1, h2, h3, h4, h5, h6 {
+   font-size: inherit;
+   font-weight: 400;
+ }
+
+ /*------all_style-------*/
+
+.wrapper{
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 0px 20px;  
+   border: 1px solid black;
+   
+}
+.content{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.content h1{
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 40px;
+}
+
+.todo__list {
+   background-color:#FF7346;
+   width: 90%;
+   padding: 0 20px;
+}
+
+.todo__list__fild__create {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+ 
+}
+.todo__list__fild__create input[type=text]{
+   width: 85%;
+   margin: 10px 0;
+   padding: 5px 10px;   
+   border-radius: 5px;
+   border: 0px;
+}
+
+.todo__list__fild__create input[type=button]{
+   margin: 10px 0px 10px 10px;
+   padding: 5px 10px;
+   border-radius: 5px;
+   border: 0px;
+   background-color: #fff;
+}
+
+.todo__list__fild__create input{
+   padding-left: 10px;
+}
+
+input:focus{
+   outline: 0;
+}
+
+.todo__list__taks {
+  margin-top: 10px;
+  width: 100%;
+  padding: 0;
+}
+
+.todo__list__taks__one-task {
+   display: flex;
+   background-color: rgba(242,217,168);
+   border-radius: 5px;
+   margin-top: 5px;
+   padding: 8px;
+   font-size: 14px;
+   font-weight: 500;   
+}
+.todo__list__taks__one-task span{
+   padding: 2px 0px 0px 10px
+}
+.todo__list__taks__one-task:last-child {
+   margin-bottom: 10px;
+}
+
+.todo__list__taks__one-task.completed{
+   background-color: rgba(242,217,168, 0.5);
+   text-decoration: line-through;
+}
+
+
