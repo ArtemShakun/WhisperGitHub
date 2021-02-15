@@ -10,6 +10,7 @@ const tasks = [
 
 
 const renderListItems = listItems => {
+
    const listElem = document.querySelector('.todo__list__taks');
 
    const listItemElements = listItems
@@ -30,18 +31,12 @@ const renderListItems = listItems => {
          checkbox.setAttribute('type', 'checkbox');
          checkbox.checked = done;
 
-
-
          listItemElem.append(checkbox, span);
-
          return listItemElem
+
       });
 
    listElem.append(...listItemElements)
-
-
-
-
 }
 
 renderListItems(tasks);
