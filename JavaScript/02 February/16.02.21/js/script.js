@@ -68,3 +68,13 @@ const onSeatSelect = event => {
 arenaElem.addEventListener('click', onSeatSelect);
 
 renderArena();
+
+// for(let i=0; i<10; i++) {
+//    setTimeout(function() {
+//      alert(i);
+//    }, 100);
+//  }
+// null + {0:1}[0] + [,[1],][1][0]
+// for(let key in  {1:1, 0:0}) {
+//    alert(key);
+//   }
