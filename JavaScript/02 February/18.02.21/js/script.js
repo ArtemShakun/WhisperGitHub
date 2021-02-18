@@ -1,6 +1,5 @@
 // ЧЕЙНИНГ
 
-
 // calc(3).add(2).mult(4).div(10).substract(5).result(); // -3
 
 // const calc = initValue => {
@@ -88,4 +87,12 @@
 // const result = markFavorites(tree, favorites);
 // console.log(result)
 
+
 // КАРРИРОВАНИЕ
+
+// const sum = a => b => a + b;
+
+// const add = sum(5);
+// const result = add(8);
+// console.log(result)
+
